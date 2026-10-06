@@ -9,8 +9,8 @@
 
 ## Etapa 2 — Tipos
 
-- [ ] T3: Definir interface `Regiao` em `src/types/Regiao.ts`
-- [ ] T4: Definir interface `CidadeIBGE` em `src/types/CidadeIBGE.ts`
+- [x] T3: Definir interface `Regiao` em `src/types/Regiao.ts`
+- [x] T4: Definir interface `CidadeIBGE` em `src/types/CidadeIBGE.ts`
 
 ## Etapa 3 — Serviços
 
