@@ -42,8 +42,8 @@
 
 ## Etapa 8 — Melhorias de estilo/UX
 
-- [ ] T18: Remover CSS não utilizado do template (`App.css` e trechos de `index.css`)
-- [ ] T19: Estilizar autocomplete como dropdown (posição absoluta, hover, cursor pointer)
+- [x] T18: Remover CSS não utilizado do template (`App.css` e trechos de `index.css`)
+- [x] T19: Estilizar autocomplete como dropdown (posição absoluta, hover, cursor pointer)
 - [ ] T20: Estilizar o campo de input (largura, padding, foco acessível)
 - [ ] T21: Padronizar CSS Modules nos componentes (BuscaRegiao, Home, MensagemErro)
 - [ ] T22: Destacar mensagem de erro (cor de alerta, fundo suave)
