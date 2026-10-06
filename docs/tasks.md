@@ -19,8 +19,8 @@
 
 ## Etapa 4 — Componentes
 
-- [ ] T7: Criar `BuscaRegiao` com autocomplete e debounce
-- [ ] T8: Criar `Mapa` com marcador e zoom adequado
+- [x] T7: Criar `BuscaRegiao` com autocomplete e debounce
+- [x] T8: Criar `Mapa` com marcador e zoom adequado
 - [ ] T9: Criar `MensagemErro`
 
 ## Etapa 5 — Integração
