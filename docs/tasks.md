@@ -14,8 +14,8 @@
 
 ## Etapa 3 — Serviços
 
-- [ ] T5: Implementar `buscarCidades(termo)` em `src/services/ibge.ts`
-- [ ] T6: Implementar `buscarRegiao(nome)` em `src/services/geocodificacao.ts`
+- [x] T5: Implementar `buscarCidades(termo)` em `src/services/ibge.ts`
+- [x] T6: Implementar `buscarRegiao(nome)` em `src/services/geocodificacao.ts`
 
 ## Etapa 4 — Componentes
 
