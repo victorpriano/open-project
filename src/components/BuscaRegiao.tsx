@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { buscarCidades } from '../services/ibge';
 import type { CidadeIBGE } from '../types/CidadeIBGE';
-import styles from './BuscaRegiao.module.css';
+import './BuscaRegiao.css';
 
 interface BuscaRegiaoProps {
   onSelecionarCidade: (cidade: CidadeIBGE) => void;
@@ -31,7 +31,7 @@ export function BuscaRegiao({ onSelecionarCidade, onLimpar }: BuscaRegiaoProps) 
   }, [termo]);
 
   return (
-    <div className={styles.campo}>
+    <div className="campo">
       <input
         type="text"
         placeholder="Digite o nome da cidade..."
@@ -42,10 +42,10 @@ export function BuscaRegiao({ onSelecionarCidade, onLimpar }: BuscaRegiaoProps) 
             onLimpar();
           }
         }}
-        className={styles.input}
+        className="input"
       />
       {cidades.length > 0 && (
-        <ul className={styles.sugestoes}>
+        <ul className="sugestoes">
           {cidades.map((cidade) => (
             <li
               key={cidade.id}

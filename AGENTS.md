@@ -29,7 +29,7 @@ npm run build
 - Use componentes funcionais com hooks (não componentes de classe).
 - Componentes em PascalCase dentro de `src/components/`; arquivos auxiliares em camelCase.
 - Mantenha a lógica de busca/geocodificação da região separada da renderização do mapa.
-- Use CSS Modules para estilização dos componentes.
+- Usar arquivos CSS por componente com o mesmo nome do componente, no formato `NomeDoComponente.css` (ex.: `Mapa.css`), importados no próprio componente. Não usar o padrão `.module.css`.
 - Mantenha mudanças pequenas e focadas.
 - Não commite credenciais, chaves de API de mapas ou arquivos `.env` (use `.env.example`).
 

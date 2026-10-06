@@ -3,7 +3,7 @@ import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import { useEffect } from 'react';
 import type { Regiao } from '../types/Regiao';
-import styles from './Mapa.module.css';
+import './Mapa.css';
 
 interface MapaProps {
   regiao: Regiao | null;
@@ -28,7 +28,7 @@ export function Mapa({ regiao }: MapaProps) {
     <MapContainer
       center={posicao}
       zoom={regiao ? 12 : 4}
-      className={styles.mapa}
+      className="mapa"
     >
       <TileLayer
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'

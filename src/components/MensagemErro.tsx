@@ -1,4 +1,4 @@
-import styles from './MensagemErro.module.css';
+import './MensagemErro.css';
 
 interface MensagemErroProps {
   mensagem: string;
@@ -6,7 +6,7 @@ interface MensagemErroProps {
 
 export function MensagemErro({ mensagem }: MensagemErroProps) {
   return (
-    <p role="alert" className={styles.erro}>
+    <p role="alert" className="erro">
       Erro: {mensagem}
     </p>
   );
