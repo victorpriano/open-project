@@ -5,7 +5,7 @@
 ## Etapa 1 — Setup
 
 - [x] T1: Criar projeto React com TypeScript (Vite)
-- [ ] T2: Instalar `react-leaflet`, `leaflet`, `axios` e `@types/leaflet`
+- [x] T2: Instalar `react-leaflet`, `leaflet`, `axios` e `@types/leaflet`
 
 ## Etapa 2 — Tipos
 
