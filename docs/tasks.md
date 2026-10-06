@@ -34,3 +34,8 @@
 - [ ] T13: Testar busca inválida e ausência de rede
 - [ ] T14: Verificar responsividade
 - [ ] T15: Garantir build sem erros de TypeScript (`npm run build`)
+
+## Etapa 7 — Melhorias
+
+- [ ] T16: Centralizar URLs base das APIs em variáveis de ambiente (`VITE_*`)
+- [ ] T17: Extrair estados e handler de `App.tsx` para o componente `Home`

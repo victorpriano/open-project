@@ -21,6 +21,7 @@ src/
     BuscaRegiao.tsx      # input com autocomplete + listagem de sugestões
     Mapa.tsx             # componente de mapa com marcador
     MensagemErro.tsx     # exibição de erro
+    Home.tsx             # página principal (estado + handler)
   services/
     ibge.ts              # busca de cidades na API do IBGE
     geocodificacao.ts    # chamada à API de geocodificação
@@ -49,12 +50,14 @@ src/
    - `Mapa`: recebe `Regiao` e renderiza marcador com zoom adequado.
    - `MensagemErro`: exibe falhas de busca.
    > Tasks: T7, T8, T9
-5. **Integração no App**: controlar os estados `carregando`, `regiao`,
-   `cidades` e `erro`.
-   > Task: T10
+5. **Integração**: página `Home` concentra os estados `carregando`, `regiao`,
+   `cidades` e `erro`; `App.tsx` renderiza apenas `<Home />`.
+   > Tasks: T10, T17
 6. **Validação**: testar autocomplete, seleção de cidade, buscas inválidas e
    ausência de rede; verificar responsividade.
    > Tasks: T11 a T15
+7. **Melhorias**: URLs externas em `.env` (`VITE_*`).
+   > Task: T16
 
 ## 5. Gerenciamento de estado
 
@@ -73,6 +76,8 @@ const [carregando, setCarregando] = useState(false);
 - Aplicar debounce (ex.: 300ms) nas chamadas ao IBGE a cada tecla digitada.
 - Tratar timeout e falha de rede nas chamadas com `axios`.
 - Se futuramente usar API com chave, mover para variável de ambiente.
+- Centralizar URLs base das APIs externas em variáveis de ambiente (`VITE_*`), com fallback nos valores padrão de desenvolvimento.
+- Manter o `App.tsx` enxuto: apenas a composição raiz (ex.: `<Home />`). O componente `Home` concentra o estado e o handler de seleção; regras de negócio e chamadas de API ficam em `services/`.
 
 ## 7. Critérios de conclusão
 
