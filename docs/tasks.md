@@ -37,5 +37,5 @@
 
 ## Etapa 7 — Melhorias
 
-- [ ] T16: Centralizar URLs base das APIs em variáveis de ambiente (`VITE_*`)
-- [ ] T17: Extrair estados e handler de `App.tsx` para o componente `Home`
+- [x] T16: Centralizar URLs base das APIs em variáveis de ambiente (`VITE_*`)
+- [x] T17: Extrair estados e handler de `App.tsx` para o componente `Home`

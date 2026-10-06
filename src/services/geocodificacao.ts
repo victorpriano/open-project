@@ -7,9 +7,12 @@ interface NominatimResultado {
   lon: string;
 }
 
+const GEOCODIFICACAO_BASE_URL =
+  import.meta.env.VITE_GEOCODIFICACAO_BASE_URL ?? 'https://nominatim.openstreetmap.org';
+
 export async function buscarRegiao(nome: string): Promise<Regiao> {
   const response = await axios.get<NominatimResultado[]>(
-    'https://nominatim.openstreetmap.org/search',
+    `${GEOCODIFICACAO_BASE_URL}/search`,
     {
       params: { q: nome, format: 'json', limit: 1 },
       headers: { 'Accept-Language': 'pt-BR' },
