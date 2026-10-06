@@ -35,7 +35,7 @@
 - [ ] T14: Verificar responsividade
 - [ ] T15: Garantir build sem erros de TypeScript (`npm run build`)
 
-## Etapa 7 — Melhorias
+## Etapa 7 — Melhorias Parte 1
 
 - [x] T16: Centralizar URLs base das APIs em variáveis de ambiente (`VITE_*`)
 - [x] T17: Extrair estados e handler de `App.tsx` para o componente `Home`
@@ -50,3 +50,7 @@
 - [x] T23: Melhorar indicação de carregamento
 - [x] T24: Tornar altura do mapa responsiva (ex.: 60vh) com borda/sombra
 - [x] T25: Ajustar layout do Home (max-width, centralização, espaçamentos)
+
+## Etapa 9 - Melhorias Parte 2
+- [x] T26: Limpar o marcador do mapa para retornar a visualização padrão, quando o nome do campo for apagado
+- [x] T27: Evitar que os botões do maps fiquem sobrepostos ao expandir a sugestão das cidades

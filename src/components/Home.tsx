@@ -29,7 +29,10 @@ export function Home() {
   return (
     <main className={styles.container}>
       <h1>Localizador de Cidades</h1>
-      <BuscaRegiao onSelecionarCidade={handleSelecionarCidade} />
+      <BuscaRegiao
+        onSelecionarCidade={handleSelecionarCidade}
+        onLimpar={() => setRegiao(null)}
+      />
       {carregando && <p className={styles.carregando}>Carregando...</p>}
       {erro && <MensagemErro mensagem={erro} />}
       <Mapa regiao={regiao} />

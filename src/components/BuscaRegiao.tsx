@@ -5,9 +5,10 @@ import styles from './BuscaRegiao.module.css';
 
 interface BuscaRegiaoProps {
   onSelecionarCidade: (cidade: CidadeIBGE) => void;
+  onLimpar: () => void;
 }
 
-export function BuscaRegiao({ onSelecionarCidade }: BuscaRegiaoProps) {
+export function BuscaRegiao({ onSelecionarCidade, onLimpar }: BuscaRegiaoProps) {
   const [termo, setTermo] = useState('');
   const [cidades, setCidades] = useState<CidadeIBGE[]>([]);
 
@@ -35,7 +36,12 @@ export function BuscaRegiao({ onSelecionarCidade }: BuscaRegiaoProps) {
         type="text"
         placeholder="Digite o nome da cidade..."
         value={termo}
-        onChange={(e) => setTermo(e.target.value)}
+        onChange={(e) => {
+          setTermo(e.target.value);
+          if (e.target.value.trim() === '') {
+            onLimpar();
+          }
+        }}
         className={styles.input}
       />
       {cidades.length > 0 && (
