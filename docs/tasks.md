@@ -39,3 +39,14 @@
 
 - [x] T16: Centralizar URLs base das APIs em variáveis de ambiente (`VITE_*`)
 - [x] T17: Extrair estados e handler de `App.tsx` para o componente `Home`
+
+## Etapa 8 — Melhorias de estilo/UX
+
+- [ ] T18: Remover CSS não utilizado do template (`App.css` e trechos de `index.css`)
+- [ ] T19: Estilizar autocomplete como dropdown (posição absoluta, hover, cursor pointer)
+- [ ] T20: Estilizar o campo de input (largura, padding, foco acessível)
+- [ ] T21: Padronizar CSS Modules nos componentes (BuscaRegiao, Home, MensagemErro)
+- [ ] T22: Destacar mensagem de erro (cor de alerta, fundo suave)
+- [ ] T23: Melhorar indicação de carregamento
+- [ ] T24: Tornar altura do mapa responsiva (ex.: 60vh) com borda/sombra
+- [ ] T25: Ajustar layout do Home (max-width, centralização, espaçamentos)
