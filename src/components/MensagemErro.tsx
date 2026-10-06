@@ -1,4 +1,4 @@
-import './MensagemErro.css';
+import '../styles/MensagemErro.css';
 
 interface MensagemErroProps {
   mensagem: string;

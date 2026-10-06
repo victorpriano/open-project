@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { buscarCidades } from '../services/ibge';
 import type { CidadeIBGE } from '../types/CidadeIBGE';
-import './BuscaRegiao.css';
+import '../styles/BuscaRegiao.css';
 
 interface BuscaRegiaoProps {
   onSelecionarCidade: (cidade: CidadeIBGE) => void;

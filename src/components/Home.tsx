@@ -5,7 +5,7 @@ import { MensagemErro } from './MensagemErro'
 import { buscarRegiao } from '../services/geocodificacao'
 import type { Regiao } from '../types/Regiao'
 import type { CidadeIBGE } from '../types/CidadeIBGE'
-import './Home.css'
+import '../styles/Home.css'
 
 export function Home() {
   const [regiao, setRegiao] = useState<Regiao | null>(null)

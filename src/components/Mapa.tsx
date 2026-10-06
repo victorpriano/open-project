@@ -3,7 +3,7 @@ import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import { useEffect } from 'react';
 import type { Regiao } from '../types/Regiao';
-import './Mapa.css';
+import '../styles/Mapa.css';
 
 interface MapaProps {
   regiao: Regiao | null;

@@ -18,14 +18,15 @@ API do IBGE e visualiza sua localização em um mapa interativo.
 ```
 src/
   components/
-    BuscaRegiao.tsx          # input com autocomplete + listagem de sugestões
-    BuscaRegiao.css          # estilos do BuscaRegiao
-    Mapa.tsx                 # componente de mapa com marcador
-    Mapa.css                 # estilos do Mapa
-    MensagemErro.tsx         # exibição de erro
-    MensagemErro.css         # estilos do MensagemErro
-    Home.tsx                 # página principal (estado + handler)
-    Home.css                 # estilos do Home
+    BuscaRegiao.tsx      # input com autocomplete + listagem de sugestões
+    Mapa.tsx             # componente de mapa com marcador
+    MensagemErro.tsx     # exibição de erro
+    Home.tsx             # página principal (estado + handler)
+  styles/
+    BuscaRegiao.css      # estilos do BuscaRegiao
+    Mapa.css             # estilos do Mapa
+    MensagemErro.css     # estilos do MensagemErro
+    Home.css             # estilos do Home
   services/
     ibge.ts              # busca de cidades na API do IBGE
     geocodificacao.ts    # chamada à API de geocodificação
@@ -35,7 +36,7 @@ src/
   App.tsx
 ```
 
-Cada componente possui seu próprio arquivo de estilo na mesma pasta do componente, no formato `NomeDoComponente.css`.
+Cada componente possui seu próprio arquivo de estilo na pasta `src/styles/`, no formato `NomeDoComponente.css`.
 
 > Tasks relacionadas: T3, T4, T7, T8, T9
 
