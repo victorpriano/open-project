@@ -5,6 +5,7 @@ import { MensagemErro } from './MensagemErro'
 import { buscarRegiao } from '../services/geocodificacao'
 import type { Regiao } from '../types/Regiao'
 import type { CidadeIBGE } from '../types/CidadeIBGE'
+import styles from './Home.module.css'
 
 export function Home() {
   const [regiao, setRegiao] = useState<Regiao | null>(null)
@@ -26,10 +27,10 @@ export function Home() {
   }
 
   return (
-    <main>
+    <main className={styles.container}>
       <h1>Localizador de Cidades</h1>
       <BuscaRegiao onSelecionarCidade={handleSelecionarCidade} />
-      {carregando && <p>Carregando...</p>}
+      {carregando && <p className={styles.carregando}>Carregando...</p>}
       {erro && <MensagemErro mensagem={erro} />}
       <Mapa regiao={regiao} />
     </main>
