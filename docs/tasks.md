@@ -25,7 +25,7 @@
 
 ## Etapa 5 — Integração
 
-- [ ] T10: Integrar estados `regiao`, `cidades`, `erro` e `carregando` no `App`
+- [x] T10: Integrar estados `regiao`, `cidades`, `erro` e `carregando` no `App`
 
 ## Etapa 6 — Validação
 
